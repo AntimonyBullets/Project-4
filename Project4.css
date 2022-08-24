@@ -11,7 +11,7 @@
 }
 
 body {
-    background-color: white;
+    background-color: orange;
 }
 
 /* CONTAINER 1 */
@@ -121,7 +121,7 @@ nav {
     text-decoration: underline;
 }
 
-.items {
+#items{
     display: flex;
     justify-content: space-evenly;
     width: 100%;
@@ -190,4 +190,75 @@ nav {
     cursor: pointer;
     opacity: 0.8;
     transition: 0.2s;
+}
+@media only screen and (max-width: 1309px){
+    #purana{
+        gap:30px;
+    }
+}
+@media only screen and (max-width: 1060px){
+    #container1{
+        height: unset;
+    }
+    #items{
+        flex-direction: column;
+        align-items: center;
+        height: 2000px;
+    }
+    #purana{
+        grid-template-columns: repeat(4, auto);
+    }
+    #container2{
+        height: unset;
+        padding-bottom: 30px;
+    }
+}
+@media only screen and (max-width: 900px){
+    nav{
+        flex-direction: column;
+        align-items: center;
+        height: 35vh;
+        justify-content: space-evenly;
+    }
+    #logo{
+        justify-content: center;
+        height: 70px;
+    }
+    #button{
+        width: 250px;
+    }
+    #heading1{
+        margin-top:35vh;
+    }
+    #purana{
+        grid-template-columns: repeat(3, auto);
+    }
+    #log{
+        width: 97.7px;
+        text-align: center;
+    }
+    #sign{
+        width: 97.7px;
+    }
+}
+@media only screen and (max-width: 650px){
+    #purana{
+        grid-template-columns: repeat(1, auto);
+    }
+    .common-purana-img{
+        height: 300px;
+    }
+}
+@media only screen and (max-width: 450px){
+    #navigation ul{
+        width: 350px;
+    }
+}
+@media only screen and (max-width: 350px){
+    #navigation-list a{
+        font-size: 16px;
+    }
+    #navigation ul{
+        width: 275px;
+    }
 }
